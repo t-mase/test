@@ -2,7 +2,7 @@
 <html lang="ja">
 
 	<head>
-		<meta charset="Shift_JIS">
+		<meta charset="unicode">
 
 		<title>reveal.js - The HTML Presentation Framework</title>
 
@@ -23,6 +23,33 @@
 			}
 		</script>
 
+
+<script src="https://s3.amazonaws.com/remoats/scripts/github/remotes.ne.min.js"></script>
+ 
+<script>
+new Remotes("preview")
+.on("swipe-left", function(e){
+navigateLeft();
+})
+.on("swipe-right", function(e){
+/* what happens when i swipe right on my phone? */
+})
+.on("swipe-up", function(e){
+
+})
+.on("swipe-down", function(e){
+/* it's going down */
+})
+.on("tap", function(e){
+/* and the screen explodes */
+})
+.on("hold", function(e){
+/* hold on */
+})
+.on("release", function(e){
+/* hands off */
+});	
+</script>
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
@@ -37,7 +64,7 @@
 			
 			<section data-markdown data-separator="^\n---$" data-vertical="^\n>>>$">
 			<script type="text/template">
-				## たいとる
+				## qたいとるp
 				 ～revealってリヴィイルって感じで読むらしいですよ～
 				
 				---
