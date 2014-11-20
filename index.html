@@ -23,22 +23,28 @@
 			}
 		</script>
 
-
 <script src="https://s3.amazonaws.com/remoats/scripts/github/remotes.ne.min.js"></script>
- 
+<script src="./js/reveal.js"></script>
+
 <script>
+
+
 new Remotes("preview")
 .on("swipe-left", function(e){
-navigateLeft();
+Reveal.navigateNext();
 })
 .on("swipe-right", function(e){
 /* what happens when i swipe right on my phone? */
+
+Reveal.navigatePrev();
+
 })
 .on("swipe-up", function(e){
-
+Reveal.navigateDown();
 })
 .on("swipe-down", function(e){
 /* it's going down */
+Reveal.navigateUp();
 })
 .on("tap", function(e){
 /* and the screen explodes */
@@ -65,7 +71,9 @@ navigateLeft();
 			<section data-markdown data-separator="^\n---$" data-vertical="^\n>>>$">
 			<script type="text/template">
 				## qたいとるp
-				 ～revealってリヴィイルって感じで読むらしいですよ～
+				## 　
+				 #### ～revealってリヴィイルって感じで読むらしいですよ～
+				 #### リビール、ReBeer!
 				
 				---
 				## もくじ
